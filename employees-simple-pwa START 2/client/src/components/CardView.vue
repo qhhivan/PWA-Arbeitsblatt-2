@@ -30,6 +30,11 @@ export default {
       type: Array,
     },
   },
+  data() {
+    return {
+      serverAddress: process.env.VUE_APP_SERVER
+    }
+  },
 };
 </script>
 
