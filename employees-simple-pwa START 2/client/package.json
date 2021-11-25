@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start": "http-server ./dist",
+    "start": "npx http-server ./dist",
     "lint": "vue-cli-service lint"
   },
   "author": "Ivan Orsolic",
