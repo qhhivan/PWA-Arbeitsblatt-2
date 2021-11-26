@@ -10,7 +10,8 @@
       mt-5
     "
   >
-  <h3>Willkommen bei der Service Worker Untersuchung!</h3>
+    <h3>Willkommen bei der Service Worker Untersuchung!</h3>
+    <!-- <h3>Willkommen bei der Service Worker Untersuchung!</h3> -->
     <ButtonGet @get="fetchData"></ButtonGet>
 
     <CardView :employees="employees" @del="delEmployee"></CardView>
@@ -62,6 +63,16 @@ export default {
         console.log(error.message);
       }
     },
+
+    updateAvailable() {
+      alert('UPDATE');
+    },
+  },
+  // Aufgabe 4
+  created() {
+    document.addEventListener('swUpdated', this.updateAvailable, {
+      once: true,
+    });
   },
 };
 </script>

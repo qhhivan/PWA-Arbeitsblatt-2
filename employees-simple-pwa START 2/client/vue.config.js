@@ -1,4 +1,10 @@
+// Aufgabe 5
+const path = require('path');
+
 module.exports = {
+  // Aufgabe 5
+  outputDir: path.resolve(__dirname, '../server/public'),
+
   pwa: {
     manifestOptions: {
       name: 'PWA Demo Employees',
